@@ -309,6 +309,16 @@
 
     {% sections 'header-group' %}
 
+    <h3>Hello from tactech</h3>
+
+    <pre>
+      {% if request.design_mode  %}
+        You are in design mode.
+      {% else %}
+        You are in live mode.
+      {% endif %}
+    </pre>
+
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
